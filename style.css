@@ -1,0 +1,46 @@
+/* Shared look for the Bulk Image Collector policy site — same graphite family
+   as the product so the pages read as first-party. */
+:root {
+  --bg: #0b0c0d;
+  --panel: #131416;
+  --line: #26282b;
+  --text: #f1f2f3;
+  --muted: #8c9096;
+  --accent: #eceef0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(120% 60% at 50% -10%, #1b1d20 0%, #0b0c0d 55%, #060607 100%) fixed var(--bg);
+  color: var(--text);
+  font: 15px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+header.site {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 32px;
+}
+header.site .brand { font-size: 20px; font-weight: 700; letter-spacing: .02em; }
+header.site .brand em { color: var(--muted); font-style: normal; font-weight: 400; }
+header.site nav { margin-left: auto; display: flex; gap: 16px; }
+header.site nav a { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: .04em; }
+header.site nav a:hover, header.site nav a.on { color: var(--text); }
+h1 { font-size: 26px; margin: 0 0 8px; }
+h2 { font-size: 17px; margin: 36px 0 10px; letter-spacing: .02em; }
+p, li { color: #cfd2d6; }
+.muted { color: var(--muted); font-size: 13px; }
+.card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  padding: 18px 22px; margin: 18px 0;
+}
+.card.quote { font-family: Consolas, monospace; font-size: 13.5px; white-space: pre-line; }
+a { color: var(--accent); }
+ul { padding-left: 22px; }
+footer.site {
+  margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  color: var(--muted); font-size: 13px; display: flex; gap: 14px; flex-wrap: wrap;
+}
+footer.site a { color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+td, th { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
